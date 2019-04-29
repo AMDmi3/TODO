@@ -20,8 +20,8 @@ dashboard_projects = [
 ]
 
 def print_dashboard(file):
-    print('| Project | Build | Release | Commits | Packaging |', file=file)
-    print('|---------|-------|---------|---------|-----------|', file=file)
+    print('| Project | ★ | Build | Release | Commits | Packaging |', file=file)
+    print('|---------|---|-------|---------|---------|-----------|', file=file)
 
     for project in dashboard_projects:
         ghp = project.get('ghp')
@@ -31,6 +31,7 @@ def print_dashboard(file):
 
         cells = []
         cells.append(f'[{ghp}](https://github.com/{gha}/{ghp})')
+        cells.append(f'[![GitHub stars](https://img.shields.io/github/stars/{gha}/{ghp}.svg?label=)](https://github.com/{gha}/{ghp})')
         cells.append(f'[![Build Status](https://travis-ci.org/{gha}/{ghp}.svg?branch=master&label=)](https://travis-ci.org/{gha}/{ghp})')
         cells.append(f'[![GitHub release](https://img.shields.io/github/release/{gha}/{ghp}.svg?label=)](https://github.com/{gha}/{ghp}/releases)')
         if pypi:
