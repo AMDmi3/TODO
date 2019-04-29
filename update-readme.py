@@ -21,7 +21,7 @@ dashboard_projects = [
 
 def print_dashboard(file):
     print('| Project | ★ | Build | Release | Commits | Packaging |', file=file)
-    print('|---------|---|-------|---------|---------|-----------|', file=file)
+    print('|---------|:-:|:-----:|:-------:|:-------:|:----------|', file=file)
 
     for project in dashboard_projects:
         ghp = project.get('ghp')
