@@ -35,7 +35,7 @@ def print_dashboard(file):
         cells.append(f'![GitHub release](https://img.shields.io/github/release/{gha}/{ghp}.svg?label=)')
         if pypi:
             cells[-1] += f' [![PyPI version](https://img.shields.io/pypi/v/{pypi}.svg)](https://pypi.org/project/{pypi}/)'
-        cells.append(f'[![Github commits (since latest release)](https://img.shields.io/github/commits-since/{gha}/{ghp}/latest.svg?label=)](https://github.com/{gha}/{ghp})')
+        cells.append(f'[![Github commits (since latest release)](https://img.shields.io/github/commits-since/{gha}/{ghp}/latest.svg?label=)](https://github.com/{gha}/{ghp}/commits/master)')
         cells.append(f'[![Packaging status](https://repology.org/badge/vertical-allrepos/{rpl}.svg?header=)](https://repology.org/project/{rpl}/versions)')
         print('| ' + ' | '.join(cells) + ' |', file=file)
 
