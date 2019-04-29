@@ -32,7 +32,7 @@ def print_dashboard(file):
         cells = []
         cells.append(f'[{ghp}](https://github.com/{gha}/{ghp})')
         cells.append(f'[![Build Status](https://travis-ci.org/{gha}/{ghp}.svg?branch=master&label=)](https://travis-ci.org/{gha}/{ghp})')
-        cells.append(f'![GitHub release](https://img.shields.io/github/release/{gha}/{ghp}.svg?label=)')
+        cells.append(f'[![GitHub release](https://img.shields.io/github/release/{gha}/{ghp}.svg?label=)](https://github.com/{gha}/{ghp}/releases)')
         if pypi:
             cells[-1] += f' [![PyPI version](https://img.shields.io/pypi/v/{pypi}.svg)](https://pypi.org/project/{pypi}/)'
         cells.append(f'[![Github commits (since latest release)](https://img.shields.io/github/commits-since/{gha}/{ghp}/latest.svg?label=)](https://github.com/{gha}/{ghp}/commits/master)')
