@@ -17,6 +17,7 @@ dashboard_projects = [
     #{'gha': 'AMDmi3', 'ghp': 'streetmangler', 'rpl': 'streetmangler'},
     {'gha': 'AMDmi3', 'ghp': 'tiletool', 'rpl': 'tiletool'},
     #{'gha': 'AMDmi3', 'ghp': 'tspell', 'rpl': 'tspell'},
+    {'gha': 'AMDmi3', 'ghp': 'aesqlapius', 'rpl': 'python:aesqlapius', 'pypi': 'aesqlapius'},
 ]
 
 def print_dashboard(file):
